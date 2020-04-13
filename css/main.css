@@ -1,0 +1,255 @@
+body, html{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+}
+
+img{
+  image-orientation: from-image;
+}
+
+button{
+  font-family: 'Ubuntu', sans-serif;
+  background: rgba(0, 15, 207, 1);
+  padding: 10px;
+  border-radius: 3px;
+  border: 0.2px solid white;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 1.5px 0 0 black;
+}
+
+button:hover{
+  background: rgb(0, 63, 255, 1);
+  font-weight: 500;
+}
+/* BACKGROUND INDEX */
+.main-container{
+  background-image: url('../photos/alicante.jpg');
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ESTILOS NAVBAR */
+header{
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr, 1fr;
+}
+
+header .RRSS span {
+    color: white;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: 70px;
+  height: 60px;
+}
+
+nav ul li{
+  padding: 10px;
+}
+/* nav ul li img{
+  width: 32px;
+  height: auto;
+}
+
+.youtube img{
+  width: 30px;
+  height: auto;
+}
+
+.twitter img{
+  width: 30px;
+  height: auto;
+} */
+
+nav .nav-options{
+  max-height: 70px;
+  background: rgba(0, 15, 207, 1);
+  /* background: rgba(0, 41, 255, 1); */
+}
+
+nav .logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo figure{
+  margin: 0 10px;
+  margin-left: 80px;
+  height: 100%;
+}
+
+.logo a{
+  text-decoration: none;
+  color: black;
+}
+
+.logo .about-me{
+  margin-right: 80px;
+  text-decoration: underline;
+}
+
+.logo-img img {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  /* background-image: url('../photos/alicante.jpg');
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.home-main .home{
+  display: grid;
+  grid-column: 2;
+  justify-content: center;
+  height: 80px;
+  margin-top: 85px;
+  /* background-image: url('../photos/alicante.jpg');
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.home-main a{
+  margin: auto;
+
+}
+
+.home-title{
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+
+/* .home-main button{
+  font-family: 'Ubuntu', sans-serif;
+  background: rgba(0, 15, 207, 1);
+  padding: 10px;
+  border-radius: 3px;
+  border: 0.2px solid white;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 1.5px 0 0 black;
+}
+
+.home-main button:hover{
+  background: rgb(0, 63, 255, 1);
+  font-weight: 700;
+} */
+
+.about-me:hover{
+  font-weight: 500;
+}
+
+
+/* STYLE BLOGS.HTML */
+    /* BLOGS HEADER */
+.blogs-header-container{
+  background: lightgrey;
+  /* border-radius: 10px; */
+}
+
+.blogs-header-section{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+  margin: 0 200px;
+}
+
+.blogs-header-title{
+  /* border: 1px solid red; */
+  padding: 0 50px 50px 50px;
+}
+
+.blogs-header-title img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 0 0 gray;
+}
+
+.blogs-header-content{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+
+/* .blogs-header-content button{
+  font-family: 'Ubuntu', sans-serif;
+  background: rgba(0, 15, 207, 1);
+  padding: 10px;
+  border-radius: 3px;
+  border: 0.2px solid white;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 1.5px 0 0 black;
+}
+
+.blogs-header-content button:hover{
+  background: rgb(0, 63, 255, 1);
+  font-weight: 500;
+} */
+
+  /* BLOGS PORTFOLIO   */
+.blogs-portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.blogs-portfolio-subtitles{
+  grid-column: 1 / span 3
+}
+
+.blogs-portfolio-subtitles h2{
+  display: inline-block;
+}
+
+.blogs-portfolio-trip img{
+  width: 100%;
+  height: auto;
+}
