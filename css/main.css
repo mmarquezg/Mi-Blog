@@ -9,6 +9,10 @@ body, html{
   right: 0; */
 }
 
+a{
+  color: black;
+  text-decoration: none;
+}
 img{
   image-orientation: from-image;
 }
@@ -28,6 +32,28 @@ button:hover{
   background: rgb(0, 63, 255, 1);
   font-weight: 500;
 }
+
+.grid-container{
+  max-width: 1920px;
+  margin: auto;
+}
+
+footer .top-footer{
+  height: 30px;
+  background: rgba(0, 15, 207, 1);
+}
+
+footer .bottom-footer{
+  height: 65px;
+  background: rgba(0, 0, 0, 0.86);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 30px;
+  font-size: 12px;
+}
+
 /* BACKGROUND INDEX */
 .main-container{
   background-image: url('../photos/alicante.jpg');
@@ -47,7 +73,7 @@ header{
   width: 100%;
   height: 140px;
   display: grid;
-  grid-template-rows: 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 header .RRSS span {
@@ -188,8 +214,7 @@ nav .logo{
 
 .blogs-header-section{
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
-  grid-template-rows: 1fr;
+  grid-template-columns: 1.5fr 1fr;
   justify-content: space-between;
   margin: 0 200px;
 }
@@ -231,25 +256,144 @@ nav .logo{
   /* BLOGS PORTFOLIO   */
 .blogs-portfolio{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60px 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   justify-items: center;
-  grid-gap: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 20px;
+  grid-gap: 20px;
+  padding: 200px;
+  padding-top: 0px;
+  padding-bottom: 30px;
 }
 
 .blogs-portfolio-subtitles{
-  grid-column: 1 / span 3
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 200px;
 }
 
+
 .blogs-portfolio-subtitles h2{
-  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cdd2da;
 }
 
 .blogs-portfolio-trip img{
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 0 0 gray;
   width: 100%;
   height: auto;
 }
+
+
+/* BLOG STYLE */
+.main-blog{
+
+}
+
+.main-blog-img{
+  padding: 0 100px 40px;
+}
+
+.main-blog-img img{
+  width: 100%;
+}
+
+.main-blog-content{
+  padding: 0 100px 40px;
+}
+
+.main-blog-content h3{
+  border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+}
+
+.main-blog-content section h2{
+  font-size: 35px;
+}
+
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background-color: #e6e9ed;
+    text-align: center;
+    padding-bottom: 30px;
+    /* padding-left: 60px; */
+}
+.contact-main-container div {
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+}
+.contact-main-container div a {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+}
+.contact-main-container img {
+    width: 100px;
+}
+
+
+/* PROFILE STYLES */
+
+.profile-header-container{
+  background: lightgrey;
+  /* border-radius: 10px; */
+}
+
+.profile-header-section{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 200px;
+  align-items: center;
+}
+
+.profile-header-title{
+  /* border: 1px solid red; */
+  padding: 50px;
+}
+
+.profile-header-title img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 0 0 gray;
+}
+
+.profile-header-content{
+  margin: auto;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+
+.profile-portfolio{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 20px;
+  padding: 200px;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.profile-portfolio-subtitles{
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 200px;
+}
+
+.profile-portfolio-subtitles h2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cdd2da;
+}
+
+/* .profile-main h2{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cdd2da;
+} */
